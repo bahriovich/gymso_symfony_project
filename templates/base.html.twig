@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+       
+        {% block stylesheets %}
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+            <meta name="description" content="">
+            <meta name="keywords" content="">
+            <meta name="author" content="">
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+            <link rel="stylesheet" href="{{asset('frontend/css/bootstrap.min.css')}}">
+            <link rel="stylesheet" href="{{asset('frontend/css/font-awesome.min.css')}}">
+            <link rel="stylesheet" href="{{asset('frontend/css/aos.css')}}">
+
+            <!-- MAIN CSS -->
+                <link rel="stylesheet" href="{{asset('frontend/css/tooplate-gymso-style.css')}}">
+        {% endblock %}
+
+        {% block javascripts %}
+            <script src="{{asset('frontend/js/jquery.min.js')}}"></script>
+            <script src="{{asset('frontend/js/bootstrap.min.js')}}"></script>
+            <script src="{{asset('frontend/js/aos.js')}}"></script>
+            <script src="{{asset('frontend/js/smoothscroll.js')}}"></script>
+            <script src="{{asset('frontend/js/custom.js')}}"></script>
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+
+       
+    </body>
+</html>
